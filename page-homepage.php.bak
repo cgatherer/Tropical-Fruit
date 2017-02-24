@@ -1,0 +1,181 @@
+<?php
+/**
+ *  * Template Name: Home Page
+ *
+ * This is the Home Page template page for iTi Tropicals
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that
+ * other "pages" on your WordPress site will use a different template.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
+ 
+function getYoutube($video, $type){
+	$url = 'https://www.googleapis.com/youtube/v3/videos?key=AIzaSyDl77xz3EHxCKFQpb9Oy1uZ-QE7tWhaQDY&part=snippet&id='.$video;
+	$data = file_get_contents($url);
+	$json = json_decode($data);
+	if ($type == "thumbnail"){
+		$result = getThumbnail($json);
+	}else if ($type == "video"){
+		$result = getVideo($json);
+	}
+	return $result;
+}
+
+function getThumbnail($json){
+	$thumbnail = explode(" ",$json->items[0]->snippet->thumbnails->high->url);
+	return $thumbnail[0];
+}
+
+function getVideo($json){
+	$video = explode(" ",$json->items[0]->id);
+	return "http://www.youtube.com/watch?v=".$video[0];
+}
+
+get_header('test'); ?>
+
+    <header class="cd-header">
+    	<div class="royalSlider rsDefault">
+    		<img src="/wp-content/uploads/home_banner_image.jpg" alt="home" />
+	    </div>
+	    </div>
+	    </div>
+    </header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<div align="center">
+		<section class="cd-gallery">
+			
+			<div class="row" style="margin:0 !important;">
+
+			  <!-- <div class="col-md-12 col-sm-12"> Main Content -->
+			  	<?php if ( have_posts() ) : ?>
+
+					<?php if ( is_home() && ! is_front_page() ) : ?>
+						<header>
+							<h3 class="page-title screen-reader-text"><?php single_post_title(); ?></h3>
+						</header>
+					<?php endif; ?>
+
+					<?php
+					// Start the loop.
+					while ( have_posts() ) : the_post();
+
+						/*
+				 		 * Include the Post-Format-specific template for the content.
+				 		 * If you want to override this in a child theme, then include a file
+				   		 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'content-test', get_post_format() );
+
+						// End the loop.
+						endwhile;
+
+						// If no content, include the "No posts found" template.
+						else :
+							get_template_part( 'content-test', 'none' );
+
+						endif;
+						?>
+			  <!--</div> /Main Content -->
+
+		</section> <!-- cd-gallery -->
+		</div>
+
+		<div align="center" class="cd-filter-trigger">
+			<div>
+				  <p style="font-size:15px; font-weight:bold; color:#000;">iTi Tropicals -  Striving to be the leading supplier of tropical and excotic fruit juice conentratates and purees in north America.</p>
+		    </div>
+	    </div>
+
+	</main> <!-- cd-main-content -->
+	
+<script type="text/javascript">
+	var filterValue;
+
+	window.onload = function(){
+		// Isotope Container Sizing for isHorizontal
+		// jQuery('#main').style.height = window.innerHeight - 48;
+
+		// Isotope Initialization
+		jQuery('#main').isotope({
+		  itemSelector: '.apost',
+		  layoutMode: 'packery',
+		  filter: '*'
+		});
+
+		// Isotope Filtering
+		jQuery('.filters').on( 'click', 'button', function() {
+		  filterValue = jQuery(this).attr('data-filter');
+		  jQuery('#main').isotope({ filter: filterValue });
+		  jQuery('#main').isotope({ filter: filterValue });
+		  //setInterval(function(){offsetMargin();},10);
+		});
+
+		/*jQuery('.menu-item').on( 'click', function() {
+		  filterValue = jQuery(this).find('a').html();
+		  filterValue = (filterValue!="iTi Home") ? ".category-"+filterValue.toLowerCase() : "*";
+		  jQuery('#main').isotope({ filter: filterValue });
+		  jQuery('#main').isotope({ filter: filterValue });
+		});*/
+
+		jQuery(".royalSlider").royalSlider({
+			keyboardNavEnabled: true,
+			// imageAlignCenter: true,
+			imageScaleMode:"fill",
+			controlNavigation:'none',
+			autoPlay: { enabled: true, pauseOnHover: true, delay: 3000 },
+			autoScaleSlider: false,
+			arrowsNav: false,
+			loop:true
+		});
+
+		var sliders = jQuery(".rsOverflow");
+		for (var i = sliders.length - 1; i >= 0; i--) {
+			sliders[i].style.height = sliders[i].style.width;
+		};
+
+		jQuery('.test-popup-link').magnificPopup({ 
+		  type: 'iframe'
+		});
+
+		// jQuery('.thumbnail').on( 'click', function() {
+		//   alert("http://www.youtube.com/embed/"+this.id+"?autoplay=1");
+		// });
+	  	
+	   //  jQuery('iframe').each(function(index,item) {
+	   //  	if(jQuery(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
+	   //    		var w=jQuery(item).attr('width');
+	   //    		var h=jQuery(item).attr('height');   
+	   //    		jQuery(item).css('position','absolute');
+	   //     		jQuery(item).css('top','0');
+	   //     		jQuery(item).css('left','0');    
+	   //     		jQuery(item).css('width','100%');
+	   //     		jQuery(item).css('height','100%');
+	   //  	}
+	  	// });
+	};
+
+	window.onresize = function(){
+		var sliders = jQuery(".rsOverflow");
+		for (var i = sliders.length - 1; i >= 0; i--) {
+			sliders[i].style.height = sliders[i].style.width;
+		};
+		jQuery('#main').isotope({ filter: filterValue });
+	};
+	
+</script>
+
+<script src="/wp-content/themes/iTiTropicals-TBS/js/jquery.mixitup.min.js"></script>
+<script src="/wp-content/themes/iTiTropicals-TBS/js/main.js"></script>
+
+<?php get_footer('bootstrap'); ?>

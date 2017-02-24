@@ -1,0 +1,581 @@
+
+
+.page-id-1990 .rsMainSlideImage {
+	margin-top: -15px !important;
+}
+
+@media (min-width: 320px) {
+
+  		.wine-image {
+  		    height: auto;
+		    min-height: 450px;
+		    margin: 0 auto;
+		    width: 100%;
+		    position: relative;
+		    padding: 50px 0;
+		}
+
+		.wine-main {
+		    width: 100%;
+		    min-height: 450px;
+		    position: relative;
+		    box-shadow: 0 0 50px  rgba(0,0,0,0.8);
+		    padding: 50px 0;
+		    color: #000;
+		}
+
+		/* Non-essential demo stuff */
+		.hero-unit {
+		    background-color: #fff;
+		    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		}
+
+		.media-object {
+			width: 64px;
+			height: 64px;
+			padding-bottom: 30px
+		}
+
+		.cd-header-banner.wineBanner {
+		    height: auto;
+		    max-height: 550px !important;
+		}
+
+		.cd-header-banner.wineBanner h1 {
+            top: 25px;
+        }
+
+		.landing-header-title h1 {
+    		max-width: 320px;
+    		margin: 0px -18px;
+    		color: #000;
+    		font-family: "Quicksand",sans-serif;
+    		font-weight: 400;
+    		font-size: 24px;
+    		position: relative;
+    		top: 25px;
+    		padding: 20px 10px;
+    		background: none repeat scroll 0% 0%;
+    		text-align: center;
+        }
+
+		.applications {
+		    font-size:18px;
+		    margin:20px 0 0 0;
+		    text-transform:uppercase;
+		}
+
+		.landing-header-title h3 {
+    		max-width: 225px;
+            margin: 0px 30px;
+            color: #fff;
+            background: #000 !important;
+            font-family: "Quicksand",sans-serif;
+            font-weight: 200 !important;
+            font-size: 10px !important;
+            position: relative;
+            top: 15px;
+            padding: 2px 30px;
+            background: none repeat scroll 0% 0%;
+            text-align: center;
+            line-height: 175%;
+        }
+
+		.landing-header-title p {
+            max-width: 200px;
+            margin: 0px 42px;
+            color: #bdd63d;
+            background: #000 !important;
+            font-family: "Quicksand",sans-serif;
+            font-weight: 400 !important;
+            font-size: 12px !important;
+            position: relative;
+            top: 25px;
+            padding: 10px 0px;
+            background: none repeat scroll 0% 0%;
+            text-align: center;
+        }
+
+
+		.landing-title1 {
+			color:#fff;
+			background:#000;
+			padding: 0px 20px;
+    		font-weight: 400;
+    		max-width: 250px;
+   			position: absolute;
+   			bottom: 50px;
+    		text-transform: uppercase;
+    		font-size: 10px;
+    		left: 0px;
+		}
+
+		.landing-title2 {
+    		color: #fff;
+    		background: #000;
+    		padding: 0px 20px;
+    		font-weight: 400;
+    		max-width: 250px;
+   			position: absolute;
+   			bottom: 50px;
+    		text-transform: uppercase;
+    		font-size: 10px;
+    		right: 0px;
+        }
+
+		.panel-title {
+			text-align: center;
+			font-size:21px !important;
+			font-weight: 400;
+			line-height: 150%;
+			margin: 0 0 50px 0;
+		}
+
+		.panel-title span {
+			color:#bdd63d;
+		}
+
+		.landing-content {
+            text-align: center;
+			font-family: "Quicksand",sans-serif;
+            font-weight: 200 !important;
+    		font-size: 20px;
+    		line-height: 150%;
+		}
+}
+
+@media (min-width: 375px) {
+		.landing-header-title h1 {
+    		margin: 0px 5px;
+        }
+
+		.landing-header-title h3 {
+    		margin: 0px 55px;
+        }
+
+		.landing-header-title p {
+            margin: 0px 67px;
+        }
+}
+
+@media (min-width: 414px) {
+		.landing-header-title h1 {
+    		margin: 0px 25px;
+        }
+
+		.landing-header-title h3 {
+    		margin: 0px 75px;
+        }
+
+		.landing-header-title p {
+            margin: 0px 86px;
+        }
+
+		.landing-title1 {
+    		font-size: 14px;
+		}
+
+		.landing-title2 {
+    		font-size: 14px;
+        }
+}
+
+@media (min-width: 768px) {
+  		.wine-image {
+			height: auto;
+			min-height: 450px;
+			margin: 0 auto;
+		    width: 100%;
+		    position: relative;
+		    padding: 50px 0;
+		}
+
+		.wine-main {
+		    width: 100%;
+		    min-height: 450px;
+		    position: relative;
+		    box-shadow: 0 0 50px  rgba(0,0,0,0.8);
+		    padding: 50px 0;
+		    color: #000;
+		}
+
+		/* Non-essential demo stuff */
+		.hero-unit {
+			background-color: #fff;
+		    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		}
+
+		.media-object {
+			width: 64px;
+			height: 64px;
+			padding-bottom: 30px
+		}
+
+		.cd-header-banner.wineBanner {
+		    height: auto;
+		    max-height: 550px !important;
+		}
+
+		.landing-header-title h1 {
+		    max-width: 750px;
+		    margin: 0px auto;
+		    color: #000;
+		    font-family: "Quicksand",sans-serif;
+		    font-weight: 400;
+		    font-size: 55px;
+		    position: relative;
+		    top: 150px;
+		    padding: 20px 10px;
+		    background: none repeat scroll 0% 0%;
+		    text-align: center;
+		}
+
+		.landing-header-title h3 {
+    		max-width: 615px;
+    		margin: 0px auto;
+    		color: #fff;
+    		background: #000 !important;
+    		font-family: "Quicksand",sans-serif;
+    		font-weight: 200 !important;
+    		font-size: 21px !important;
+    		position: relative;
+    		top: 15px;
+    		padding: 20px 10px;
+    		background: none repeat scroll 0% 0%;
+    		text-align: center;
+		}
+
+		.landing-header-title p {
+    		max-width: 200px;
+    		margin: 0px auto;
+    		color: #bdd63d;
+    		background: #000 !important;
+    		font-family: "Quicksand",sans-serif;
+    		font-weight: 400 !important;
+    		font-size: 18px !important;
+    		position: relative;
+    		top: 25px;
+    		padding: 10px 10px;
+    		background: none repeat scroll 0% 0%;
+    		text-align: center;
+		}
+
+		.applications {
+			font-size:24px;
+			margin:20px 0 0 0;
+			text-transform:uppercase;
+		}
+
+		.landing-title1 {
+			color:#fff;
+			background:#000;
+			padding: 5px 20px;
+		    font-weight: 400;
+		    max-width: 416px;
+			position: absolute;
+			bottom: 50px;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+
+		.landing-title2 {
+			color:#fff;
+			background:#000;
+			padding: 5px 20px;
+		    font-weight: 400;
+		    max-width: 416px;
+			position: absolute;
+			bottom: 50px;
+			text-transform: uppercase;
+			font-size: 24px;
+			right: 0px;
+		}
+
+		.panel-title {
+			text-align: center;
+			font-size:30px !important;
+			font-weight: 400;
+			line-height: 150%;
+			margin: 0 0 50px 0;
+		}
+
+		.panel-title span {
+			color:#bdd63d;
+		}
+
+
+		.landing-content {
+			text-align: center;
+			font-family: "Quicksand",sans-serif;
+            font-weight: 200 !important;
+			font-size:24px;
+			line-height: 150%;
+		}
+}
+
+@media (min-width: 992px) {
+  		.wine-image {
+			height: auto;
+			min-height: 450px;
+			margin: 0 auto;
+		    width: 100%;
+		    position: relative;
+		    padding: 50px 0;
+		}
+
+		.wine-main {
+		    width: 100%;
+		    min-height: 450px;
+		    position: relative;
+		    box-shadow: 0 0 50px  rgba(0,0,0,0.8);
+		    padding: 50px 0;
+		    color: #000;
+		}
+
+		/* Non-essential demo stuff */
+		.hero-unit {
+			background-color: #fff;
+		    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		}
+
+		.media-object {
+			width: 64px;
+			height: 64px;
+			padding-bottom: 30px
+		}
+
+		.cd-header-banner.wineBanner {
+		    height: auto;
+		    max-height: 550px !important;
+		}
+
+		.landing-header-title h1 {
+		    max-width: 750px;
+		    margin: 0px auto;
+		    color: #000;
+		    font-family: "Quicksand",sans-serif;
+		    font-weight: 400;
+		    font-size: 65px;
+		    position: relative;
+		    top: 180px;
+		    padding: 20px 10px;
+		    background: none repeat scroll 0% 0%;
+		    text-align: center;
+		}
+
+		.landing-header-title h3 {
+    		max-width: 850px;
+    		margin: 0px auto;
+    		color: #fff;
+    		background: #000 !important;
+    		font-family: "Quicksand",sans-serif;
+    		font-weight: 200 !important;
+    		font-size: 30px !important;
+    		position: relative;
+    		top: 30px;
+    		padding: 10px 10px;
+    		background: none repeat scroll 0% 0%;
+    		text-align: center;
+		}
+
+		.landing-header-title p {
+			max-width: 200px;
+		    margin: 0px auto;
+		    color: #bdd63d;
+		    background: #000 !important;
+		    font-family: "Quicksand",sans-serif;
+		    font-weight: 400 !important;
+		    font-size: 18px !important;
+		    position: relative;
+		    top: 60px;
+		    padding: 10px 10px;
+		    background: none repeat scroll 0% 0%;
+		    text-align: center;
+		}
+
+		.applications {
+			font-size:36px;
+			margin:20px 0 0 0;
+			text-transform:uppercase;
+		}
+
+		.landing-title1 {
+			color:#fff;
+			background:#000;
+			padding: 5px 20px;
+		    font-weight: 400;
+		    max-width: 416px;
+			position: absolute;
+			bottom: 50px;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+
+		.landing-title2 {
+			color:#fff;
+			background:#000;
+			padding: 5px 20px;
+		    font-weight: 400;
+		    max-width: 416px;
+			position: absolute;
+			bottom: 50px;
+			text-transform: uppercase;
+			font-size: 24px;
+			right: 0px;
+		}
+
+		.panel-title {
+			text-align: center;
+			font-size:30px !important;
+			font-weight: 400;
+			line-height: 150%;
+			margin: 0 0 50px 0;
+		}
+
+		.panel-title span {
+			color:#bdd63d;
+		}
+
+
+		.landing-content {
+			text-align: center;
+			font-family: "Quicksand",sans-serif;
+            font-weight: 200 !important;
+			font-size:28px;
+			line-height: 150%;
+		}
+}
+
+@media (min-width: 1200px) {
+  		.wine-image {
+			height: auto;
+			min-height: 450px;
+			margin: 0 auto;
+		    width: 100%;
+		    position: relative;
+		    padding: 50px 0;
+		}
+
+		.wine-main {
+		    width: 100%;
+		    min-height: 450px;
+		    position: relative;
+		    box-shadow: 0 0 50px  rgba(0,0,0,0.8);
+		    padding: 50px 0;
+		    color: #000;
+		}
+
+		/* Non-essential demo stuff */
+		.hero-unit {
+			background-color: #fff;
+		    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		}
+
+		.media-object {
+			width: 64px;
+			height: 64px;
+			padding-bottom: 30px
+		}
+
+		.cd-header-banner.wineBanner {
+		    height: auto;
+		    max-height: 550px !important;
+		}
+
+		.landing-header-title h1 {
+		    max-width: 750px;
+		    margin: 0px auto;
+		    color: #000;
+		    font-family: "Quicksand",sans-serif;
+		    font-weight: 400;
+		    font-size: 65px;
+		    position: relative;
+		    top: 90px !important;
+		    padding: 20px 10px;
+		    background: none repeat scroll 0% 0%;
+		    text-align: center;
+		}
+
+		.landing-header-title h3 {
+		    max-width: 850px;
+		    margin: 0px auto;
+		    color: #fff;
+		    background: #000 !important;
+		    font-family: "Quicksand",sans-serif;
+		    font-weight: 200 !important;
+		    font-size: 30px !important;
+		    position: relative;
+		    top: 110px;
+		    padding: 5px 10px;
+		    background: none repeat scroll 0% 0%;
+		    text-align: center;
+		}
+
+		.landing-header-title p {
+		    max-width: 200px;
+		    margin: 0px auto;
+		    color: #bdd63d;
+		    background: #000 !important;
+		    font-family: "Quicksand",sans-serif;
+		    font-weight: 400 !important;
+		    font-size: 18px !important;
+		    position: relative;
+		    top: 138px;
+		    padding: 10px 10px;
+		    background: none repeat scroll 0% 0%;
+		    text-align: center;
+		}
+
+		.applications {
+			font-size:36px;
+			margin:20px 0 0 0;
+			text-transform:uppercase;
+		}
+
+		.landing-title1 {
+			color:#fff;
+			background:#000;
+			padding: 5px 20px;
+		    font-weight: 400;
+		    max-width: 416px;
+			position: absolute;
+			bottom: 50px;
+			text-transform: uppercase;
+			font-size: 24px;
+			left: 150px;
+		}
+
+		.landing-title2 {
+			color:#fff;
+			background:#000;
+			padding: 5px 20px;
+		    font-weight: 400;
+		    max-width: 416px;
+			position: absolute;
+			bottom: 50px;
+			text-transform: uppercase;
+			font-size: 24px;
+			right: 150px;
+		}
+
+		.panel-title {
+			text-align: center;
+			font-size:30px !important;
+			font-weight: 400;
+			line-height: 150%;
+			margin: 0 0 50px 0;
+		}
+
+		.panel-title span {
+			color:#bdd63d;
+		}
+
+
+		.landing-content {
+			text-align: center;
+			font-family: "Quicksand",sans-serif;
+            font-weight: 200 !important;
+			font-size:24px;
+			line-height: 150%;
+		}
+}

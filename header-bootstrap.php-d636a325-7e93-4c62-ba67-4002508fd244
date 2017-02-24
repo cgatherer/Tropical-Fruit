@@ -1,0 +1,69 @@
+<?php
+/**
+ * The template for displaying the header
+ *
+ * Displays all of the head element and everything up until the "site-content" div.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js">
+<head>
+
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	
+	<!--[if lt IE 9]>
+	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+	<![endif]-->
+	<?php wp_head(); ?>
+	
+	<script src="/wp-content/themes/iTiTropicals-TBS/js/bootstrap.min.js"></script>
+	<script src="/wp-content/themes/iTiTropicals-TBS/js/isotope.pkgd.js"></script>
+	<script src="/wp-content/themes/iTiTropicals-TBS/js/packery-mode.pkgd.min.js"></script>
+    <link rel="stylesheet" href="/wp-content/themes/iTiTropicals/royalslider/skins/default/rs-default.css">
+    <script type="text/javascript" src="/wp-content/themes/iTiTropicals/royalslider/jquery.royalslider.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-relative-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                 <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+                <img name="logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="logo"></a>
+                <?php 
+
+                $searchBar = '<div style="display:inline-block;">';
+                $searchBar .= '<form role="search" method="get" class="search-form" action="http://iti.princetonpartnersdevelopment.com/"><label><span class="screen-reader-text">Search for:</span><input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" /></label><input type="submit" class="search-submit screen-reader-text" value="Search" /></form>'
+                $searchBar .= '</div>';
+
+                wp_nav_menu(
+                    array(
+                        'menu' => 'main-menu',
+                        'container_class' => 'nav-collapse collapse',
+                        'menu_class' => 'nav',
+                        'fallback_cb' => '',
+                        'menu_id' => 'main-menu',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li>'.$searchBar.'</li></ul>',
+                        'walker' => new Bootstrapwp_Walker_Nav_Menu()
+                    )
+                ); 
+
+                ?>
+            </div>
+        </div>
+    </div>
+   
+        <div class="container">
